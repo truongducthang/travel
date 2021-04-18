@@ -3,12 +3,15 @@ import './_Newsletter.scss';
 import { useForm } from 'react-hook-form';
 const Newsletter = () => {
   const { register, errors, handleSubmit } = useForm({});
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data, e) => {
+    console.log(data);
+    e.target.reset(); // reset after form submit
+  };
   return (
     <div className="Newsletter">
       <h3 className="Newsletter__title">Newsletter</h3>
       <p className="Newsletter__content">
-        Get timely updates from your favorite products
+        Get timely updates from your favorite rooms
       </p>
       <form
         onSubmit={handleSubmit(onSubmit)}
@@ -42,7 +45,7 @@ const Newsletter = () => {
           <input
             type="submit"
             value="Subscribe"
-            className=" btn form_support__btn "
+            className="btn form_support__btn"
           />
         </div>
       </form>

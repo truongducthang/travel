@@ -1,5 +1,3 @@
-@import './Reset.scss';
-
 /* @import '../common/ButtonUI/_button.css'; */
 
 *,
@@ -219,6 +217,9 @@ a {
 }
 .ant-tabs-tab:hover {
   color: #ba55d3;
+}
+.ant-tabs.ant-tabs-top {
+  align-items: center;
 }
 .ant-tabs-tab {
   color: #667;

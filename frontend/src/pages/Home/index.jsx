@@ -1,6 +1,6 @@
 import React from 'react';
-import Banner from '../../common/Banner/Banner';
-import CarouselCpn from '../../common/Carousel/Carousel';
+import Banner from '../../components/HomePageComponents/Banner/Banner';
+import CarouselCpn from '../../components/HomePageComponents/Carousel/Carousel';
 import './_Home.scss';
 import Products from '../../components/HomePageComponents/Products';
 const HomePage = () => {

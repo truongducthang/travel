@@ -14,9 +14,9 @@ const logo = {
 };
 const ListItemNavbar = [
   { id: 1, text: 'home', route: '/' },
-  { id: 2, text: 'shop', route: '/shop' },
-  { id: 3, text: 'men ', route: '/men' },
-  { id: 4, text: 'women', route: '/women' },
+  { id: 2, text: 'Tour', route: '/tour' },
+  { id: 3, text: 'Booking', route: '/booking' },
+  { id: 4, text: 'Destination', route: '/destination' },
   { id: 5, text: 'news', route: '/news' },
   { id: 6, text: 'contact', route: '/contact' },
 ];
