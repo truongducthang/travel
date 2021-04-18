@@ -77,7 +77,10 @@ const Header = () => {
       <Row style={{ flex: 1 }}>
         <Col xs={6} sm={6} md={6} lg={10} span={10}>
           <div className="toggle_menu">
-            <HiOutlineMenu fontSize="2rem" />
+            <HiOutlineMenu
+              color={`${!top ? '#000' : '#fff'}`}
+              fontSize="2rem"
+            />
           </div>
           <div className="navbarMain">
             <ul className="navbar">

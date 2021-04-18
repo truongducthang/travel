@@ -3,6 +3,7 @@
   padding: 0 4rem 3rem;
   display: flex;
   justify-content: space-between;
+  flex-flow: wrap;
 
   &:before {
     content: '';
