@@ -1,21 +1,79 @@
 import { Col, Row } from 'antd';
 import React from 'react';
 import DividerShort from '../../../common/DividerShort';
+import TravelDestinationBox from './TravelDestinationBox';
 import './_Destinations.scss';
+const ListTravelDestinations = [
+  {
+    id: 1,
+    name: 'A',
+    packages: [
+      { id: 1, name: 'Berlin' },
+      { id: 2, name: 'Amsterdam' },
+      { id: 3, name: 'Tuscany' },
+      { id: 4, name: 'Berlin' },
+      { id: 5, name: 'Amsterdam' },
+      { id: 6, name: 'Tuscany' },
+    ],
+    destination: 'Europe',
+    url_img:
+      'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/04/destination-9.jpg',
+  },
+  {
+    id: 2,
+    name: 'B',
+    packages: [{ id: 1, name: 'Phuket' }],
+    destination: 'thailandia',
+    url_img:
+      'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/destination-5-720x720.jpg',
+  },
+  {
+    id: 3,
+    name: 'C',
+    packages: [{ id: 1, name: 'Hongkong' }],
+    destination: 'asia',
+    url_img:
+      'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/destination-8.jpg',
+  },
+  {
+    id: 4,
+    name: 'D',
+    packages: [],
+    destination: 'italy',
+    url_img:
+      'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/destination-10.jpg',
+  },
+  {
+    id: 5,
+    name: 'E',
+    packages: [{ id: 1, name: 'Test' }],
+    destination: 'netherlands',
+    url_img:
+      'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/destination-11.jpg',
+  },
+  {
+    id: 6,
+    name: 'F',
+    packages: [],
+    destination: 'united states',
+    url_img:
+      'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/destination-1-1-720x720.jpg',
+  },
+];
 const Destinations = () => {
   return (
     <div className="destinations">
       <div className="destinations__title">
-        <h1>
+        <h1 className="h1">
           OUR <span>DESTINATIONS</span>
         </h1>
-        <h3>CHOOSE YOUR NEXT DESTINATION</h3>
+        <h3 className="h3">CHOOSE YOUR NEXT DESTINATION</h3>
         <DividerShort />
         <div className="travel_destinations">
           <Row gutter={[24, 24]}>
-            {new Array(6).fill(null).map((item, index) => (
+            {ListTravelDestinations.map((TravelDestination) => (
               <Col
-                key={index}
+                key={TravelDestination.id}
                 className="gutter-row"
                 span={4}
                 xs={24}
@@ -23,24 +81,9 @@ const Destinations = () => {
                 md={12}
                 lg={8}
                 xl={8}
-                xxl={6}
+                xxl={8}
               >
-                <div className="travel_destination">
-                  <img
-                    className="travel_destination__img"
-                    alt="example"
-                    src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/04/destination-9.jpg"
-                  />
-                  <div className="travel_destination__tag">
-                    <div className="travel_destination__tag__text">
-                      OCEANCIA
-                    </div>
-                  </div>
-                  <div className="travel_destination__description">
-                    <h3>Da Nang</h3>
-                    <h6>3 Packages</h6>
-                  </div>
-                </div>
+                <TravelDestinationBox TravelDestination={TravelDestination} />
               </Col>
             ))}
           </Row>
