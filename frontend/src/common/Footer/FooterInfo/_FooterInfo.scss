@@ -3,18 +3,19 @@
   padding: 0 4rem 3rem;
   display: flex;
   justify-content: space-between;
-  flex-flow: wrap;
+  flex-wrap: wrap;
 
   &:before {
     content: '';
     display: block;
     border-top: 1px solid #f1f2f4;
     margin-bottom: 3rem;
+    order:1;
   }
 }
 .footer_menu {
+  order:2;
   display: flex;
-  width: 100%;
   align-items: center;
   &__item {
     color: #909097;
