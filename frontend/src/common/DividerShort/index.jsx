@@ -1,0 +1,18 @@
+import React from 'react';
+
+const DividerShort = () => {
+  return (
+    <div style={{ textAlign: 'center' }}>
+      <span
+        style={{
+          height: '4px',
+          width: '80px',
+          backgroundColor: '#f1f1f1',
+          display: 'inline-block',
+        }}
+      ></span>
+    </div>
+  );
+};
+
+export default DividerShort;
