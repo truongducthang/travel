@@ -1,6 +1,7 @@
 import { Col, Row } from 'antd';
 import React from 'react';
 import DividerShort from '../../../common/DividerShort';
+import TitleSection from '../../../common/TitleSection';
 import TravelDestinationBox from './TravelDestinationBox';
 import './_Destinations.scss';
 const ListTravelDestinations = [
@@ -63,31 +64,30 @@ const ListTravelDestinations = [
 const Destinations = () => {
   return (
     <div className="destinations">
-      <div className="destinations__title">
-        <h1 className="h1">
-          OUR <span>DESTINATIONS</span>
-        </h1>
-        <h3 className="h3">CHOOSE YOUR NEXT DESTINATION</h3>
-        <DividerShort />
-        <div className="travel_destinations">
-          <Row gutter={[24, 24]}>
-            {ListTravelDestinations.map((TravelDestination) => (
-              <Col
-                key={TravelDestination.id}
-                className="gutter-row"
-                span={4}
-                xs={24}
-                sm={24}
-                md={12}
-                lg={8}
-                xl={8}
-                xxl={8}
-              >
-                <TravelDestinationBox TravelDestination={TravelDestination} />
-              </Col>
-            ))}
-          </Row>
-        </div>
+      <TitleSection
+        title="our"
+        title_ul="DESTINATIONS"
+        suggest="CHOOSE YOUR NEXT DESTINATION"
+      />
+      <DividerShort />
+      <div className="travel_destinations">
+        <Row gutter={[24, 24]}>
+          {ListTravelDestinations.map((TravelDestination) => (
+            <Col
+              key={TravelDestination.id}
+              className="gutter-row"
+              span={4}
+              xs={24}
+              sm={24}
+              md={12}
+              lg={8}
+              xl={8}
+              xxl={8}
+            >
+              <TravelDestinationBox TravelDestination={TravelDestination} />
+            </Col>
+          ))}
+        </Row>
       </div>
     </div>
   );

@@ -1,0 +1,32 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+const ButtonUI = (props) => {
+  return (
+    <div
+      style={{
+        padding: props.p || '0',
+        margin: props.m || '0',
+        color: props.color || '#14b9d5',
+      }}
+      className="btn"
+    >
+      <Link className="btn" to={props.href || '/packages'}>
+        <span
+          style={{
+            textTransform: props.textTransform || 'uppercase',
+            backgroundColor: props.bg || '#fff',
+            color: props.color || '#14b9d5',
+            padding: props.paddingButton || ' 0.5rem 2rem',
+            margin: props.marginButton || '0',
+            borderRadius: props.borderRadius || '25px',
+            letterSpacing: '2px',
+          }}
+        >
+          {props.text || 'VIEW DESTINATION'}
+        </span>
+      </Link>
+    </div>
+  );
+};
+
+export default ButtonUI;

@@ -1,6 +1,7 @@
 import React from 'react';
 import './_Carousel.scss';
-import { Button, Carousel } from 'antd';
+import { Carousel } from 'antd';
+import ButtonUI from '../../../common/ButtonUI';
 
 const ListItemSlider = [
   {
@@ -34,7 +35,7 @@ const CarouselCpn = () => {
                 <h1 className="carousel__title">{item.title} </h1>
                 <div className="carousel__description">Discover now Latest</div>
                 <div>
-                  <Button>Buy Now</Button>
+                  <ButtonUI text="Buy now" />
                 </div>
               </div>
             </div>

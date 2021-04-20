@@ -9,9 +9,7 @@ const NavbarItem = (props) => {
       }`}
       key={props.item.id}
     >
-      <Link to={props.item.route ? props.item.route : '/'}>
-        {props.item.text}
-      </Link>
+      <Link to={props.item.route || '/'}>{props.item.text}</Link>
     </li>
   );
 };

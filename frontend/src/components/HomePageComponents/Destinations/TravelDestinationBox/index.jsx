@@ -2,12 +2,17 @@ import React from 'react';
 import './_TravelDestinationBox.scss';
 import { Link } from 'react-router-dom';
 import { Image } from 'antd';
+import ButtonUI from '../../../../common/ButtonUI';
 const TravelDestinationBox = (props) => {
   const { name, packages, destination, url_img } = props.TravelDestination;
   return (
     <div className="travel_destination">
       {url_img ? (
-        <img className="travel_destination__img" alt="example" src={url_img} />
+        <img
+          className="travel_destination__img"
+          alt="example"
+          src={url_img || 'https://fakeimg.pl/720x720/'}
+        />
       ) : (
         <Image
           className="travel_destination__img"
@@ -31,7 +36,7 @@ const TravelDestinationBox = (props) => {
           <div className="travel_destination__content--wrapItem">
             {packages?.map(({ name }, index) => (
               <div key={index} className="travel_destination__content--item">
-                <Link to="/packages">
+                <Link to={`/packages/${name.toLowerCase()}`}>
                   <span>{name}</span>
                 </Link>
               </div>
@@ -49,11 +54,7 @@ const TravelDestinationBox = (props) => {
             </Link>
           </div> */}
           {/*end delete  */}
-          <div className=" travel_destination__content--btn">
-            <Link className="travel_destination__content--btn" to="/packages">
-              <span>VIEW DESTINATION</span>
-            </Link>
-          </div>
+          <ButtonUI />
         </div>
       </div>
     </div>
