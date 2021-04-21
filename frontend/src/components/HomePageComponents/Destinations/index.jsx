@@ -18,7 +18,7 @@ const ListTravelDestinations = [
     ],
     destination: 'Europe',
     url_img:
-      'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/04/destination-9.jpg',
+      'https://res.cloudinary.com/dulich/image/upload/v1619010324/travel/destination-9_iqcx0p.jpg',
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const ListTravelDestinations = [
     packages: [{ id: 1, name: 'Phuket' }],
     destination: 'thailandia',
     url_img:
-      'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/destination-5-720x720.jpg',
+      'https://res.cloudinary.com/dulich/image/upload/v1619010370/travel/destination-5-720x720_x7pt3z.jpg',
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const ListTravelDestinations = [
     packages: [{ id: 1, name: 'Hongkong' }],
     destination: 'asia',
     url_img:
-      'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/destination-8.jpg',
+      'https://res.cloudinary.com/dulich/image/upload/v1619010431/travel/destination-8_uscfys.jpg',
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const ListTravelDestinations = [
     packages: [],
     destination: 'italy',
     url_img:
-      'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/destination-10.jpg',
+      'https://res.cloudinary.com/dulich/image/upload/v1619010456/travel/destination-10_ejqdta.jpg',
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ const ListTravelDestinations = [
     packages: [{ id: 1, name: 'Test' }],
     destination: 'netherlands',
     url_img:
-      'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/destination-11.jpg',
+      'https://res.cloudinary.com/dulich/image/upload/v1619010475/travel/destination-11_ewvbau.jpg',
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const ListTravelDestinations = [
     packages: [],
     destination: 'united states',
     url_img:
-      'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/destination-1-1-720x720.jpg',
+      'https://res.cloudinary.com/dulich/image/upload/v1619010499/travel/destination-1-1-720x720_ezdfeh.jpg',
   },
 ];
 const Destinations = () => {

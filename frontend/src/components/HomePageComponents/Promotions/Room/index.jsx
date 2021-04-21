@@ -12,7 +12,7 @@ const Room = (props) => {
           className="room__img"
           src={
             props.url_img ||
-            'http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-01-1024x640.jpg'
+            'https://res.cloudinary.com/dulich/image/upload/v1619010674/travel/package-01-1024x640_jq41lp.jpg'
           }
           alt="img"
         />

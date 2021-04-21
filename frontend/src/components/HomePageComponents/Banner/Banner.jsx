@@ -5,7 +5,7 @@ const ListBanner = [
   {
     id: 1,
     src:
-      'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-5-filter.jpg?id=1584',
+      'https://res.cloudinary.com/dulich/image/upload/v1619010583/travel/parallax-5-filter_qgozfc.jpg',
     route: '/1',
     title: 'Discover Cities ',
     text: 'LAST MINUTE',
@@ -13,7 +13,7 @@ const ListBanner = [
   {
     id: 2,
     src:
-      'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-6-filter.jpg?id=1585',
+      'https://res.cloudinary.com/dulich/image/upload/v1619010607/travel/parallax-6-filter_vyhysu.jpg',
     route: '/2',
     title: 'Discover Nature',
     text: 'PROMOTIONS ',
