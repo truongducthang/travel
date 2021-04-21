@@ -4,6 +4,7 @@ import CarouselCpn from '../../components/HomePageComponents/Carousel/Carousel';
 import './_Home.scss';
 // import Products from '../../components/HomePageComponents/Products';
 import Destinations from '../../components/HomePageComponents/Destinations';
+import Promotions from '../../components/HomePageComponents/Promotions';
 const HomePage = () => {
   return (
     <div className="HomePage">
@@ -11,6 +12,7 @@ const HomePage = () => {
       <div className="container">
         <Destinations />
         <Banner />
+        <Promotions />
         {/* <Products /> */}
       </div>
     </div>

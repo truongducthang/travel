@@ -1,8 +1,15 @@
 import React from 'react';
 
-const DividerShort = () => {
+const DividerShort = (props) => {
+  console.log(props);
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div
+      style={{
+        textAlign: 'center',
+        margin: props.m || '0',
+        padding: props.p || '0',
+      }}
+    >
       <span
         style={{
           height: '4px',

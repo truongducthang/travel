@@ -25,6 +25,17 @@ const ButtonUI = (props) => {
           {props.text || 'VIEW DESTINATION'}
         </span>
       </Link>
+      <style jsx>
+        {`
+          .btn {
+            padding: 0;
+          }
+          .btn:hover .btn {
+            transform: scale(1.01);
+            transition: all 0.24s;
+          }
+        `}
+      </style>
     </div>
   );
 };

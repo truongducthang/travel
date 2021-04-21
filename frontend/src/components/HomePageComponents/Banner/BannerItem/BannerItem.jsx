@@ -3,7 +3,6 @@ import React from 'react';
 import './_BannerItem.scss';
 import ButtonUI from '../../../../common/ButtonUI';
 const BannerItem = (props) => {
-  console.log(props);
   return (
     <div
       className="banner_item"

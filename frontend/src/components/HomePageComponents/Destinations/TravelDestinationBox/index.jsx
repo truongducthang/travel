@@ -60,5 +60,5 @@ const TravelDestinationBox = (props) => {
     </div>
   );
 };
-
+  
 export default TravelDestinationBox;
