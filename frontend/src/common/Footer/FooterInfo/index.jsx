@@ -6,16 +6,41 @@ import {
   LinkedinOutlined,
   InstagramOutlined,
 } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 const ListItemMenu = [
   { id: 1, text: 'Blog', url: '' },
   { id: 1, text: 'FAQs', url: '' },
   { id: 1, text: 'Contact us', url: '' },
 ];
 const ListSocialIcon = [
-  { id: 1, name: 'twitter', icon: TwitterOutlined, bg: '#3b5898' },
-  { id: 2, name: 'facebook', icon: FacebookOutlined, bg: '#03b0ee' },
-  { id: 3, name: 'linkedin', icon: LinkedinOutlined, bg: '#bd091c' },
-  { id: 4, name: 'instagram', icon: InstagramOutlined, bg: '#1871bc' },
+  {
+    id: 1,
+    name: 'twitter',
+    icon: TwitterOutlined,
+    bg: '#3b5898',
+    route: 'https://www.facebook.com/tra1809',
+  },
+  {
+    id: 2,
+    name: 'facebook',
+    icon: FacebookOutlined,
+    bg: '#03b0ee',
+    route: 'https://www.facebook.com/tra1809',
+  },
+  {
+    id: 3,
+    name: 'linkedin',
+    icon: LinkedinOutlined,
+    bg: '#bd091c',
+    route: 'https://www.facebook.com/tra1809',
+  },
+  {
+    id: 4,
+    name: 'instagram',
+    icon: InstagramOutlined,
+    bg: '#1871bc',
+    route: 'https://www.facebook.com/tra1809',
+  },
 ];
 const FooterInfo = () => {
   return (
@@ -30,14 +55,16 @@ const FooterInfo = () => {
       <div className="social_icons">
         {ListSocialIcon.map((item) => (
           <div key={item.id} className="social_icons__icon">
-            <item.icon
-              style={{
-                backgroundColor: item.bg,
-                color: '#fff',
-                padding: '1.2rem',
-                borderRadius: '.5rem',
-              }}
-            />
+            <Link to={item.route} target="_blank" rel="noopener noreferrer">
+              <item.icon
+                style={{
+                  backgroundColor: item.bg,
+                  color: '#fff',
+                  padding: '1.2rem',
+                  borderRadius: '.5rem',
+                }}
+              />
+            </Link>
           </div>
         ))}
       </div>

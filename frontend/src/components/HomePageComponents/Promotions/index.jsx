@@ -28,7 +28,11 @@ const Promotions = () => {
                   <Room />
                 </Col>
                 <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                  <Room />
+                  <Room
+                    url_img="https://res.cloudinary.com/dulich/image/upload/v1619011326/travel/package-02-1024x640_mjf4ka.jpg"
+                    destination="asia"
+                    room_name="Hong kong"
+                  />
                 </Col>
               </Row>
             </div>

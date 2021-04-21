@@ -8,14 +8,16 @@ const Room = (props) => {
   return (
     <div className="room">
       <div className="room__top">
-        <img
-          className="room__img"
-          src={
-            props.url_img ||
-            'https://res.cloudinary.com/dulich/image/upload/v1619010674/travel/package-01-1024x640_jq41lp.jpg'
-          }
-          alt="img"
-        />
+        <div style={{ overflow: 'hidden' }}>
+          <img
+            className="room__img"
+            src={
+              props.url_img ||
+              'https://res.cloudinary.com/dulich/image/upload/v1619010674/travel/package-01-1024x640_jq41lp.jpg'
+            }
+            alt="img"
+          />
+        </div>
         <div className="room__icon">
           <BsFillHeartFill />
         </div>
@@ -51,7 +53,7 @@ const Room = (props) => {
             efficitur ante. Donec dapibus dictum scelerisque.
           </div>
         </div>
-        <ButtonUI color="#fff" bg="#f76570" />
+        <ButtonUI text="Details" color="#fff" bg="#f76570" />
       </div>
     </div>
   );
