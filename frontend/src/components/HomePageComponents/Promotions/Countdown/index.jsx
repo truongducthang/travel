@@ -1,5 +1,6 @@
 import React from 'react';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
+import ButtonUI from '../../../../common/ButtonUI';
 
 const minuteSeconds = 60;
 const hourSeconds = 3600;
@@ -148,6 +149,7 @@ const Countdown = () => {
           </CountdownCircleTimer>
         </div>
       </div>
+      <ButtonUI text="Check now" paddingButton="1rem 3rem" p="2rem 0 0" />
     </div>
   );
 };

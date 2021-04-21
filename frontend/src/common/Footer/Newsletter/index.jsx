@@ -43,6 +43,7 @@ const Newsletter = () => {
         {/* eslint-enable */}
         <div>
           <input
+            style={{ padding: '1.4rem' }}
             type="submit"
             value="Subscribe"
             className="btn form_support__btn"

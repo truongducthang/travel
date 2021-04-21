@@ -53,7 +53,7 @@ const Room = (props) => {
             efficitur ante. Donec dapibus dictum scelerisque.
           </div>
         </div>
-        <ButtonUI text="Details" color="#fff" bg="#f76570" />
+        <ButtonUI href="/rooms" text="Details" color="#fff" bg="#f76570" />
       </div>
     </div>
   );

@@ -32,6 +32,10 @@
 .social_icons {
   display: flex;
   &__icon {
+    transition: hover 0.4s;
     margin-left: 1rem;
+    &:hover {
+      filter: brightness(1.3);
+    }
   }
 }

@@ -1,12 +1,11 @@
+import {
+  FacebookOutlined,
+  InstagramOutlined,
+  LinkedinOutlined,
+  TwitterOutlined,
+} from '@ant-design/icons';
 import React from 'react';
 import './_FooterInfo.scss';
-import {
-  TwitterOutlined,
-  FacebookOutlined,
-  LinkedinOutlined,
-  InstagramOutlined,
-} from '@ant-design/icons';
-import { Link } from 'react-router-dom';
 const ListItemMenu = [
   { id: 1, text: 'Blog', url: '' },
   { id: 1, text: 'FAQs', url: '' },
@@ -55,7 +54,7 @@ const FooterInfo = () => {
       <div className="social_icons">
         {ListSocialIcon.map((item) => (
           <div key={item.id} className="social_icons__icon">
-            <Link to={item.route} target="_blank" rel="noopener noreferrer">
+            <a href={item.route} target="_blank" rel="noopener noreferrer">
               <item.icon
                 style={{
                   backgroundColor: item.bg,
@@ -64,7 +63,7 @@ const FooterInfo = () => {
                   borderRadius: '.5rem',
                 }}
               />
-            </Link>
+            </a>
           </div>
         ))}
       </div>
