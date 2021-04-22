@@ -12,6 +12,7 @@ import DestinationsPage from './pages/Destinations';
 import DestinationsDetailsPage from './pages/DestinationsDetails';
 import ProductsPage from './pages/Products';
 import ProductsDetailsPage from './pages/ProductsDetails';
+import CartPage from './pages/Cart';
 function App() {
   return (
     <Router>
@@ -36,8 +37,12 @@ function App() {
           <Route path="/products/:slug">
             <ProductsDetailsPage />
           </Route>
-          <Route path="/hotels">
+          <Route path="/homestays">
             <ProductsPage />
+          </Route>
+
+          <Route path="/cart">
+            <CartPage />
           </Route>
 
           <Route path="/">

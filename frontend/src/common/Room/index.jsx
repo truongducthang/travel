@@ -3,7 +3,7 @@ import './_Room.scss';
 import { BsFillHeartFill } from 'react-icons/bs';
 import { GoLocation } from 'react-icons/go';
 import { Tag } from 'antd';
-import ButtonUI from '../../../../common/ButtonUI';
+import ButtonUI from '../ButtonUI';
 const Room = (props) => {
   return (
     <div className="room">

@@ -15,7 +15,7 @@ const logo = {
 const ListItemNavbar = [
   { id: 1, text: 'home', route: '/' },
   { id: 2, text: 'Packages', route: '/packages' },
-  { id: 3, text: 'Hotels', route: '/hotels' },
+  { id: 3, text: 'homestays', route: '/homestays' },
   { id: 4, text: 'Destinations', route: '/destinations' },
   { id: 5, text: 'news', route: '/news' },
   { id: 6, text: 'contact', route: '/contact' },
@@ -109,13 +109,11 @@ const Header = () => {
         <Col xs={6} sm={6} md={6} lg={10} span={10}>
           <ul className="navbar_icon">
             {ListItemIcon.map((item) => (
-              <>
+              <li key={item.id} className="navbar_icon__item">
                 <Tooltip key={item.id} placement="bottom" title={item.text}>
-                  <li key={item.id} className="navbar_icon__item">
-                    <item.icon fontSize="2rem" />
-                  </li>
+                  <item.icon fontSize="2rem" />
                 </Tooltip>
-              </>
+              </li>
             ))}
           </ul>
         </Col>

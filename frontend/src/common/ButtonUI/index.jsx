@@ -25,7 +25,7 @@ const ButtonUI = (props) => {
           {props.text || 'VIEW DESTINATION'}
         </span>
       </Link>
-      <style jsx>
+      <style jsx="true">
         {`
           .btn {
             padding: 0;

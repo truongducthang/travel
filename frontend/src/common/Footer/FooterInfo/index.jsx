@@ -8,8 +8,8 @@ import React from 'react';
 import './_FooterInfo.scss';
 const ListItemMenu = [
   { id: 1, text: 'Blog', url: '' },
-  { id: 1, text: 'FAQs', url: '' },
-  { id: 1, text: 'Contact us', url: '' },
+  { id: 2, text: 'FAQs', url: '' },
+  { id: 3, text: 'Contact us', url: '' },
 ];
 const ListSocialIcon = [
   {

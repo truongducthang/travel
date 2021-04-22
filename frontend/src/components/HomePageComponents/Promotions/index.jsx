@@ -3,7 +3,7 @@ import { Col, Row } from 'antd';
 import DividerShort from '../../../common/DividerShort';
 import TitleSection from '../../../common/TitleSection';
 import Countdown from './Countdown';
-import Room from './Room';
+import Room from '../../../common/Room';
 const Promotions = () => {
   return (
     <div
