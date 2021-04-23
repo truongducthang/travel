@@ -1,19 +1,23 @@
 .HeaderImageLayout {
   background: url('https://res.cloudinary.com/dulich/image/upload/v1619107721/travel/parallax-search-2_bz6h39.jpg')
     no-repeat center center;
-  height: 31rem;
+  // height: 40rem;
   margin: 0 auto;
   &__content {
     max-width: 1192px;
     margin: 0 auto;
     height: 100%;
     padding: 1.5rem;
+    padding-top: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
   &__title {
     display: flex;
+    .h1 {
+      text-align: left;
+    }
     // height: 100%;
     // align-items: flex-end;
   }
@@ -30,8 +34,4 @@
   &__filters:first-child {
     margin-right: 2rem;
   }
-}
-.ant-dropdown-menu-item,
-.ant-dropdown-menu-submenu-title {
-  letter-spacing: 1px;
 }

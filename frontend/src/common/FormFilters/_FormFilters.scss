@@ -6,5 +6,34 @@
   }
   &__title {
     margin-bottom: 2rem;
+    color: #555555;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
   }
+  &__input-price {
+    border: 1px solid #40a9ff;
+  }
+  //input ant design
+  &__input {
+    width: 100% !important;
+  }
+  &__label {
+    color: #9a9a9a;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+  &__input-price-wrap {
+    position: relative;
+    top: -1rem;
+    left: 1rem;
+  }
+}
+.ant-slider-track {
+  background-color: #14b9d5 !important;
+}
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-submenu-title {
+  letter-spacing: 1px;
 }
