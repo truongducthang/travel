@@ -83,6 +83,7 @@ const FormFilters = () => {
           <div className="form-filters__col">
             <div className="form-filters__title">{`Check-in & Check-out Date :`}</div>
             <RangePicker
+              placeholder={['Check-in date', 'Check-out date']}
               className="form-filters__input"
               ranges={{
                 Today: [moment(), moment()],
