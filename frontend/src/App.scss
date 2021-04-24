@@ -19,7 +19,11 @@ body {
   line-height: 1.7;
   font-family: 'Poppins', sans-serif;
   color: #23232c;
-  overflow-x: hidden;
+  // overflow-x: hidden;
+}
+.ant-row {
+  // overflow-x: hidden;
+  // margin: 0 !important;
 }
 /* 
 ::-webkit-scrollbar {

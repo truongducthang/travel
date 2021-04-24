@@ -3,7 +3,7 @@ import { Col, Row } from 'antd';
 import DividerShort from '../../../common/DividerShort';
 import TitleSection from '../../../common/TitleSection';
 import Countdown from './Countdown';
-import Room from '../../../common/Room';
+import PackageBox from '../../../common/PackageBox';
 const Promotions = () => {
   return (
     <div
@@ -16,19 +16,19 @@ const Promotions = () => {
         suggest="BEST TRAVEL PACKAGES AVAILABLE "
       />
       <DividerShort m="0 0 3rem " />
-      <div className="rooms">
+      <div className="packages">
         <Row gutter={[24, 24]}>
           <Col xs={24} sm={24} lg={24} xl={8}>
             <Countdown />
           </Col>
           <Col xs={24} sm={24} lg={24} xl={16}>
-            <div className="rooms">
+            <div className="packages">
               <Row gutter={[24, 24]}>
                 <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                  <Room />
+                  <PackageBox />
                 </Col>
                 <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                  <Room
+                  <PackageBox
                     url_img="https://res.cloudinary.com/dulich/image/upload/v1619011326/travel/package-02-1024x640_mjf4ka.jpg"
                     destination="asia"
                     room_name="Hong kong"
