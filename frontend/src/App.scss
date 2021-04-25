@@ -9,7 +9,6 @@
 }
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 body {
   box-sizing: border-box;
@@ -21,10 +20,18 @@ body {
   color: #23232c;
   // overflow-x: hidden;
 }
+//ant -row
 .ant-row {
   // overflow-x: hidden;
-  // margin: 0 !important;
+  margin: 0 !important;
 }
+@media screen and (max-width: 991.98px) {
+  .ant-row {
+    // margin: 0 !important;
+  }
+}
+
+//end ant row
 /* 
 ::-webkit-scrollbar {
   width: 1px;

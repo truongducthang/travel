@@ -37,3 +37,9 @@
 .ant-dropdown-menu-submenu-title {
   letter-spacing: 1px;
 }
+@media screen and (max-width: 991.98px) {
+  .form-filters {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

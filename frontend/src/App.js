@@ -13,43 +13,37 @@ import DestinationsDetailsPage from './pages/DestinationsDetails';
 import ProductsPage from './pages/Products';
 import ProductsDetailsPage from './pages/ProductsDetails';
 import CartPage from './pages/Cart';
+
+//list route
+const LIST_ROUTE = [
+  { id: 8, path: '/packages/:slug', component: <PackagesDetailsPage /> },
+  { id: 7, path: '/packages', component: <PackagesPage /> },
+  {
+    id: 6,
+    path: '/destinations/:slug',
+    component: <DestinationsDetailsPage />,
+  },
+  { id: 5, path: '/destinations', component: <DestinationsPage /> },
+  { id: 4, path: '/products/:slug', component: <ProductsDetailsPage /> },
+  { id: 3, path: '/homestays', component: <ProductsPage /> },
+  { id: 2, path: '/cart', component: <CartPage /> },
+  { id: 1, path: '/', component: <HomePage /> },
+];
 function App() {
   return (
     <Router>
       <div className="App">
         <Header />
 
+        {/* LIST_ROUTE    */}
         <Switch>
-          <Route path="/packages/:slug">
-            <PackagesDetailsPage />
-          </Route>
-          <Route path="/packages">
-            <PackagesPage />
-          </Route>
-
-          <Route path="/destinations/:slug">
-            <DestinationsDetailsPage />
-          </Route>
-          <Route path="/destinations">
-            <DestinationsPage />
-          </Route>
-
-          <Route path="/products/:slug">
-            <ProductsDetailsPage />
-          </Route>
-          <Route path="/homestays">
-            <ProductsPage />
-          </Route>
-
-          <Route path="/cart">
-            <CartPage />
-          </Route>
-
-          <Route path="/">
-            <HomePage />
-          </Route>
+          {LIST_ROUTE.map((route) => (
+            <Route key={route.id} path={route.path}>
+              {route.component}
+            </Route>
+          ))}
         </Switch>
-
+        {/*End LIST_ROUTE    */}
         <Footer />
         <BackTop>
           <div
