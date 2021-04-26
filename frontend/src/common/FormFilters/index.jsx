@@ -27,20 +27,22 @@ const FormFilters = () => {
     console.log('From: ', dateStrings[0], ', to: ', dateStrings[1]);
   }
   function onChangeMinPrice(value) {
-    console.log('changed', value);
+    console.log('changed min : ', value);
     setPrice((prevPrice) => {
       return { ...prevPrice, min: value };
     });
   }
   function onChangeMaxPrice(value) {
+    console.log('changed max : ', value);
     setPrice((prevPrice) => {
       return { ...prevPrice, max: value };
     });
   }
   function onChangePrice(value) {
     console.log('onChange: ', value);
-    console.log('h:', price.min);
-    setPrice({ ...price, min: value[0], max: value[1] });
+    setPrice((prevPrice) => {
+      return { ...prevPrice, min: value[0], max: value[1] };
+    });
   }
   function onChangeCheckOnlyPromotions(e) {
     console.log(`checked = ${e.target.checked}`);

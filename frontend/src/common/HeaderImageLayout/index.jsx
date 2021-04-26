@@ -6,7 +6,7 @@ import FormFilters from '../FormFilters';
 import TitleSection from '../TitleSection';
 import './_HeaderImageLayout.scss';
 
-const HeaderImageLayout = () => {
+const HeaderImageLayout = (props) => {
   const onClickFiltersPrice = ({ key }) => {
     message.info(`Click on item price  ${key}`);
   };
@@ -33,6 +33,13 @@ const HeaderImageLayout = () => {
       <div className="HeaderImageLayout">
         <div className="HeaderImageLayout__content">
           <div className="HeaderImageLayout__title">
+            {props._namePage ? (
+              <h3 className="HeaderImageLayout__title--sub">
+                {props._namePage}
+              </h3>
+            ) : (
+              <h3 className="HeaderImageLayout__title--sub">OUR packages</h3>
+            )}
             <TitleSection
               color="#fff"
               fontWeight="700"

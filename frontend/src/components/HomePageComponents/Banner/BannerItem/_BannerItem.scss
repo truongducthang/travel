@@ -11,12 +11,15 @@
     transition: all 0.24s;
   }
   &__title {
+    display: flex;
+    flex-direction: column;
     color: #ffffff;
     text-align: center;
     font-size: 3.6rem;
     letter-spacing: 0px;
     font-weight: bold;
   }
+
   &:hover .banner_item {
     &__text {
       transform: scale(1.05);

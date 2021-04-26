@@ -15,11 +15,18 @@
   }
   &__title {
     display: flex;
+    flex-direction: column;
     .h1 {
       text-align: left;
     }
-    // height: 100%;
-    // align-items: flex-end;
+
+    &--sub {
+      color: #ffffff !important;
+      letter-spacing: 2px;
+      font-weight: normal;
+      margin: 1.5rem 0;
+      text-transform: uppercase;
+    }
   }
   &__filters-wrap {
     display: flex;

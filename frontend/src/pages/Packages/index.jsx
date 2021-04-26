@@ -1,13 +1,17 @@
+import { Col, Pagination, Row } from 'antd';
 import React from 'react';
 import HeaderImageLayout from '../../common/HeaderImageLayout';
 import PackageBox from '../../common/PackageBox';
-import { Col, Row } from 'antd';
 const PackagesPage = () => {
+  const onChangePagination = (pageNumber, pageSize) => {
+    console.log('Page: ', pageNumber);
+    console.log('pageSize: ', pageSize);
+  };
   return (
     <div className="PackagesPage">
       <HeaderImageLayout />
       <div
-        className="list-product"
+        className="list-packages"
         style={{
           maxWidth: '1192px',
           margin: '0 auto',
@@ -31,6 +35,13 @@ const PackagesPage = () => {
             </Col>
           ))}
         </Row>
+        <Pagination
+          style={{ marginTop: '5rem', textAlign: 'center' }}
+          showQuickJumper
+          defaultCurrent={2}
+          total={500}
+          onChange={onChangePagination}
+        />
       </div>
     </div>
   );

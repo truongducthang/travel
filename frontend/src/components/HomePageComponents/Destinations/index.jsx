@@ -9,14 +9,14 @@ const ListTravelDestinations = [
     id: 1,
     name: 'A',
     packages: [
-      { id: 1, name: 'Berlin' },
+      { id: 1, name: 'Tràng An' },
       { id: 2, name: 'Amsterdam' },
       { id: 3, name: 'Tuscany' },
       { id: 4, name: 'Berlin' },
       { id: 5, name: 'Amsterdam' },
       { id: 6, name: 'Tuscany' },
     ],
-    destination: 'Europe',
+    destination: 'Ninh Binh',
     url_img:
       'https://res.cloudinary.com/dulich/image/upload/v1619010324/travel/destination-9_iqcx0p.jpg',
   },
