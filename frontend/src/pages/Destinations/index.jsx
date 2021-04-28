@@ -59,6 +59,45 @@ const ListTravelDestinations = [
     url_img:
       'https://res.cloudinary.com/dulich/image/upload/v1619010499/travel/destination-1-1-720x720_ezdfeh.jpg',
   },
+  {
+    id: 7,
+    name: 'G',
+    packages: [
+      { id: 1, name: 'Tràng An' },
+      { id: 2, name: 'Amsterdam' },
+      { id: 3, name: 'Tuscany' },
+      { id: 4, name: 'Berlin' },
+      { id: 5, name: 'Amsterdam' },
+      { id: 6, name: 'Tuscany' },
+    ],
+    destination: 'Ninh Binh',
+    url_img:
+      'https://res.cloudinary.com/dulich/image/upload/v1619010324/travel/destination-9_iqcx0p.jpg',
+  },
+  {
+    id: 8,
+    name: 'I',
+    packages: [{ id: 1, name: 'Hongkong' }],
+    destination: 'asia',
+    url_img:
+      'https://res.cloudinary.com/dulich/image/upload/v1619010431/travel/destination-8_uscfys.jpg',
+  },
+  {
+    id: 9,
+    name: 'H',
+    packages: [{ id: 1, name: 'Phuket' }],
+    destination: 'thailandia',
+    url_img:
+      'https://res.cloudinary.com/dulich/image/upload/v1619010370/travel/destination-5-720x720_x7pt3z.jpg',
+  },
+  {
+    id: 10,
+    name: 'K',
+    packages: [],
+    destination: 'italy',
+    url_img:
+      'https://res.cloudinary.com/dulich/image/upload/v1619010456/travel/destination-10_ejqdta.jpg',
+  },
 ];
 const DestinationsPage = () => {
   const onChangePagination = (pageNumber, pageSize) => {

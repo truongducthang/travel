@@ -30,6 +30,12 @@ body {
     // margin: 0 !important;
   }
 }
+@media screen and (max-width: 424.98px) {
+  .ant-pagination {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
 
 //end ant row
 /* 
