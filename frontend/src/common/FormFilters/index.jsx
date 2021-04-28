@@ -47,6 +47,9 @@ const FormFilters = () => {
   function onChangeCheckOnlyPromotions(e) {
     console.log(`checked = ${e.target.checked}`);
   }
+  function disabledDate(current) {
+    return current && current < moment().startOf('day');
+  }
   return (
     <div className="form-filters">
       <Row gutter={[24, 24]}>
@@ -85,6 +88,7 @@ const FormFilters = () => {
           <div className="form-filters__col">
             <div className="form-filters__title">{`Check-in & Check-out Date :`}</div>
             <RangePicker
+              disabledDate={disabledDate}
               placeholder={['Check-in date', 'Check-out date']}
               className="form-filters__input"
               ranges={{
