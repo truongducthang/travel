@@ -1,7 +1,7 @@
-import { Col, Pagination, Row } from 'antd';
 import React from 'react';
 import HeaderImageLayout from '../../common/HeaderImageLayout';
 import PackageBox from '../../common/PackageBox';
+import { Col, Row, Pagination } from 'antd';
 const PackagesPage = () => {
   const onChangePagination = (pageNumber, pageSize) => {
     console.log('Page: ', pageNumber);
@@ -11,7 +11,7 @@ const PackagesPage = () => {
     <div className="PackagesPage">
       <HeaderImageLayout />
       <div
-        className="list-packages"
+        className="list-product"
         style={{
           maxWidth: '1192px',
           margin: '0 auto',
@@ -19,7 +19,7 @@ const PackagesPage = () => {
         }}
       >
         <Row gutter={[24, 24]}>
-          {new Array(5).fill(null).map((item, index) => (
+          {new Array(10).fill(null).map((item, index) => (
             <Col
               key={index}
               className="gutter-row"
