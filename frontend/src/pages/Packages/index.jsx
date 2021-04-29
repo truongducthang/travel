@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeaderImageLayout from '../../common/HeaderImageLayout';
 import PackageBox from '../../common/PackageBox';
 import { Col, Row, Pagination } from 'antd';
 const PackagesPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const onChangePagination = (pageNumber, pageSize) => {
     console.log('Page: ', pageNumber);
     console.log('pageSize: ', pageSize);
   };
+
   return (
     <div className="PackagesPage">
       <HeaderImageLayout />
@@ -31,7 +35,7 @@ const PackagesPage = () => {
               xl={8}
               xxl={8}
             >
-              <PackageBox />
+              <PackageBox id={index} />
             </Col>
           ))}
         </Row>

@@ -9,6 +9,7 @@ const TitleSection = ({
   color,
   fontWeight,
   fontSize,
+  colorSuggest,
 }) => {
   return (
     <div className="titleSection">
@@ -22,7 +23,13 @@ const TitleSection = ({
       >
         {title || 'our'} <span>{title_ul || 'DESTINATIONS'}</span>
       </h1>
-      <h3 style={{ display: `${hideSuggest && 'none'}` }} className="h3">
+      <h3
+        style={{
+          display: `${hideSuggest && 'none'}`,
+          color: `${colorSuggest || 'a4a4a4'}`,
+        }}
+        className="h3"
+      >
         {suggest || 'CHOOSE YOUR NEXT DESTINATION'}
       </h3>
       <style jsx="true">

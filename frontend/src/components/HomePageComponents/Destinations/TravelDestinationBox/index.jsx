@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Image } from 'antd';
 import ButtonUI from '../../../../common/ButtonUI';
 const TravelDestinationBox = (props) => {
-  const { name, packages, destination, url_img } = props.TravelDestination;
+  const { id, name, packages, destination, url_img } = props.TravelDestination;
   return (
     <div className="travel_destination">
       {url_img ? (
@@ -36,7 +36,7 @@ const TravelDestinationBox = (props) => {
           <div className="travel_destination__content--wrapItem">
             {packages?.map(({ name }, index) => (
               <div key={index} className="travel_destination__content--item">
-                <Link to={`/packages/${name.toLowerCase()}`}>
+                <Link to={`/packages/${id}/${name.toLowerCase()}`}>
                   <span>{name}</span>
                 </Link>
               </div>
@@ -54,11 +54,11 @@ const TravelDestinationBox = (props) => {
             </Link>
           </div> */}
           {/*end delete  */}
-          <ButtonUI />
+          <ButtonUI href={`/destinations/${id}`} />
         </div>
       </div>
     </div>
   );
 };
-  
+
 export default TravelDestinationBox;

@@ -1,5 +1,5 @@
 import { Col, Pagination, Row } from 'antd';
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeaderImageLayout from '../../common/HeaderImageLayout';
 import TravelDestinationBox from '../../components/HomePageComponents/Destinations/TravelDestinationBox';
 
@@ -100,6 +100,9 @@ const ListTravelDestinations = [
   },
 ];
 const DestinationsPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const onChangePagination = (pageNumber, pageSize) => {
     console.log('Page: ', pageNumber);
     console.log('pageSize: ', pageSize);

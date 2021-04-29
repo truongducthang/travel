@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import HeaderImageLayout from '../../common/HeaderImageLayout';
 
 const ProductsDetailsPage = () => {
-  return <div className="ProductsDetailsPage">ProductsDetailsPage</div>;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
+    <div className="ProductsDetailsPage">
+      <HeaderImageLayout _namePage=" our Products " />
+    </div>
+  );
 };
 
 export default ProductsDetailsPage;

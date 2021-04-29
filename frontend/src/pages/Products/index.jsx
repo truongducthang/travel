@@ -1,8 +1,11 @@
 import { Col, Pagination, Row } from 'antd';
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeaderImageLayout from '../../common/HeaderImageLayout';
 import ProductItemBox from './ProductItemBox';
 const ProductsPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const onChangePagination = (pageNumber, pageSize) => {
     console.log('Page: ', pageNumber);
     console.log('pageSize: ', pageSize);

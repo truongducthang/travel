@@ -4,7 +4,15 @@ import { BsFillHeartFill } from 'react-icons/bs';
 import { GoLocation } from 'react-icons/go';
 import { Tag } from 'antd';
 import ButtonUI from '../ButtonUI';
+import { useHistory } from 'react-router-dom';
+
 const PackageBox = (props) => {
+  let history = useHistory();
+  function handlePushRoute() {
+    history.push(
+      `/packages/${props.nameHomestay ? props.nameHomestay : 'nameHomestay'}`
+    );
+  }
   return (
     <div className="package-box">
       <div className="package-box__top">
@@ -24,8 +32,10 @@ const PackageBox = (props) => {
       </div>
       <div className="package-box__content">
         <div className="package-box__title">
-          <h3 className="package-box__name">{props.room_name || 'Berlin'}</h3>
-          <h5 className="package-box__destination">
+          <h3 onClick={handlePushRoute} className="package-box__name">
+            {props.room_name || 'Berlin'}
+          </h3>
+          <h5 onClick={handlePushRoute} className="package-box__destination">
             <span className="package-box__destination--icon">
               <GoLocation />
             </span>
@@ -43,7 +53,7 @@ const PackageBox = (props) => {
                 </Tag>
               </div>
             </div>
-            <h3 className="package-box__price">
+            <h3 onClick={handlePushRoute} className="package-box__price">
               <span className="package-box__price--old">1000</span>
               700 <span>$</span>
             </h3>
@@ -54,7 +64,9 @@ const PackageBox = (props) => {
           </div>
         </div>
         <ButtonUI
-          href="/package-boxs"
+          href={`/packages/${
+            props.nameHomestay ? props.nameHomestay : 'nameHomestay'
+          }`}
           text="Details"
           color="#fff"
           bg="#f76570"

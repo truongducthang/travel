@@ -10,7 +10,7 @@ const ButtonUI = (props) => {
       }}
       className="btn"
     >
-      <Link className="btn" to={props.href || '/packages'}>
+      <Link className="btn" to={props.href || '/destinations/:slug'}>
         <span
           style={{
             textTransform: props.textTransform || 'uppercase',
