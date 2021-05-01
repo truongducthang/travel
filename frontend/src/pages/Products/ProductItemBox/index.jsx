@@ -2,6 +2,7 @@ import { Rate } from 'antd';
 import React from 'react';
 import { AiFillThunderbolt } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
+import CurrencyFormatting from '../../../helpers/CurrencyFormatting';
 import './_ProductItemBox.scss';
 
 const ProductItemBox = (props) => {
@@ -42,7 +43,9 @@ const ProductItemBox = (props) => {
             color="#FF4136"
           />
           <span style={{ marginLeft: '.5rem', marginRight: '1rem' }}>from</span>
-          <span className="product-item__price">21002100 ₫</span>
+          <span className="product-item__price">
+            {CurrencyFormatting(1250111)}
+          </span>
         </div>
       </div>
     </div>

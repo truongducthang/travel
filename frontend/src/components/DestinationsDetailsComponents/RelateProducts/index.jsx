@@ -1,20 +1,20 @@
 import { Col, Row } from 'antd';
 import React from 'react';
+import PackageBox from '../../../common/PackageBox';
 import TitleSection from '../../../common/TitleSection';
-import ProductItemBox from '../../../pages/Products/ProductItemBox';
 const RelateProducts = () => {
   return (
     <div className="RelateProducts" style={{ marginTop: '5rem' }}>
       <TitleSection
-        title="Relate"
-        title_ul="Products"
+        title="Hot Vacation"
+        title_ul="Packages"
         colorUnderline="#3fd0d4"
-        suggest="DEAL HOT, MUA NGAY KẺO LỠ!"
+        suggest="DEAL HOT, ĐẶT NGAY KẺO LỠ!"
         colorSuggest="#ff4136"
       />
       <div style={{ marginTop: '3rem' }}>
         <Row gutter={[24, 24]}>
-          {new Array(4).fill(null).map((item, index) => (
+          {new Array(8).fill(null).map((item, index) => (
             <Col
               key={index}
               className="gutter-row"
@@ -26,7 +26,7 @@ const RelateProducts = () => {
               xl={6}
               xxl={6}
             >
-              <ProductItemBox />
+              <PackageBox size="small" />
             </Col>
           ))}
         </Row>

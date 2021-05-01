@@ -1,7 +1,7 @@
 import { Col, Pagination, Row } from 'antd';
 import React, { useEffect } from 'react';
 import HeaderImageLayout from '../../common/HeaderImageLayout';
-import TravelDestinationBox from '../../components/HomePageComponents/Destinations/TravelDestinationBox';
+import TravelDestinationBox from '../../common/TravelDestinationBox';
 
 const ListTravelDestinations = [
   {

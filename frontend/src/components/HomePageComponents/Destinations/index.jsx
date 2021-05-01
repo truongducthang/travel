@@ -2,7 +2,7 @@ import { Col, Row } from 'antd';
 import React from 'react';
 import DividerShort from '../../../common/DividerShort';
 import TitleSection from '../../../common/TitleSection';
-import TravelDestinationBox from './TravelDestinationBox';
+import TravelDestinationBox from '../../../common/TravelDestinationBox';
 import './_Destinations.scss';
 const ListTravelDestinations = [
   {

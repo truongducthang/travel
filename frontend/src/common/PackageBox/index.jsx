@@ -30,12 +30,26 @@ const PackageBox = (props) => {
           <BsFillHeartFill />
         </div>
       </div>
-      <div className="package-box__content">
-        <div className="package-box__title">
-          <h3 onClick={handlePushRoute} className="package-box__name">
+      <div
+        className="package-box__content"
+        style={{ padding: `${props.size === 'small' && '1.5rem'}` }}
+      >
+        <div
+          className="package-box__title"
+          style={{ marginBottom: `${props.size === 'small' && '1rem'}` }}
+        >
+          <h3
+            onClick={handlePushRoute}
+            className="package-box__name"
+            style={{ fontSize: `${props.size === 'small' && '1.6rem'}` }}
+          >
             {props.room_name || 'Berlin'}
           </h3>
-          <h5 onClick={handlePushRoute} className="package-box__destination">
+          <h5
+            onClick={handlePushRoute}
+            className="package-box__destination"
+            style={{ fontSize: `${props.size === 'small' && '1.4rem'}` }}
+          >
             <span className="package-box__destination--icon">
               <GoLocation />
             </span>
@@ -45,8 +59,14 @@ const PackageBox = (props) => {
         <div className="package-box__description">
           <div className="package-box__description--top">
             <div className="package-box__category">
-              <div>Cultural</div>
-              <div>
+              <div
+                style={{ fontSize: `${props.size === 'small' && '1.2rem'}` }}
+              >
+                Cultural
+              </div>
+              <div
+                style={{ fontSize: `${props.size === 'small' && '1.2rem'}` }}
+              >
                 <span>RELax</span>
                 <Tag style={{ fontSize: '1rem' }} color="#f76570">
                   + 1
@@ -58,9 +78,14 @@ const PackageBox = (props) => {
               700 <span>$</span>
             </h3>
           </div>
-          <div className="package-box__description--text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
-            efficitur ante. Donec dapibus dictum scelerisque.
+          <div
+            className="package-box__description--text"
+            style={{
+              padding: `${props.size === 'small' && '1rem 0'}`,
+              fontSize: `${props.size === 'small' && '1.3rem'}`,
+            }}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </div>
         </div>
         <ButtonUI
