@@ -8,8 +8,8 @@ const ListTravelDestinations = [
     id: 1,
     name: 'A',
     packages: [
-      { id: 1, name: 'Tràng An' },
-      { id: 2, name: 'Amsterdam' },
+      { id: 1, name: 'Tràng An Homestay' },
+      { id: 2, name: 'Hang múa homestay' },
       { id: 3, name: 'Tuscany' },
       { id: 4, name: 'Berlin' },
       { id: 5, name: 'Amsterdam' },
@@ -63,8 +63,8 @@ const ListTravelDestinations = [
     id: 7,
     name: 'G',
     packages: [
-      { id: 1, name: 'Tràng An' },
-      { id: 2, name: 'Amsterdam' },
+      { id: 1, name: 'Tràng An Homestay' },
+      { id: 2, name: 'Hang múa homestay' },
       { id: 3, name: 'Tuscany' },
       { id: 4, name: 'Berlin' },
       { id: 5, name: 'Amsterdam' },

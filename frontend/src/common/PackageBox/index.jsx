@@ -43,7 +43,7 @@ const PackageBox = (props) => {
             className="package-box__name"
             style={{ fontSize: `${props.size === 'small' && '1.6rem'}` }}
           >
-            {props.room_name || 'Berlin'}
+            {props.room_name || 'NB Tràng An Homestay'}
           </h3>
           <h5
             onClick={handlePushRoute}
@@ -53,7 +53,7 @@ const PackageBox = (props) => {
             <span className="package-box__destination--icon">
               <GoLocation />
             </span>
-            {props.destination || 'Europe'}
+            {props.destination || 'Ninh Binh'}
           </h5>
         </div>
         <div className="package-box__description">

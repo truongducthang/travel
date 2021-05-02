@@ -9,7 +9,7 @@ const ListTravelDestinations = [
     id: 1,
     name: 'A',
     packages: [
-      { id: 1, name: 'Tràng An' },
+      { id: 1, name: 'Ninh Bình' },
       { id: 2, name: 'Amsterdam' },
       { id: 3, name: 'Tuscany' },
       { id: 4, name: 'Berlin' },
