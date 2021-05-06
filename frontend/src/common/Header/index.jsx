@@ -4,9 +4,10 @@ import { AiOutlineStar } from 'react-icons/ai';
 import { BiShoppingBag, BiUser } from 'react-icons/bi';
 import { BsSearch } from 'react-icons/bs';
 import { HiOutlineMenu } from 'react-icons/hi';
+import { useHistory } from 'react-router-dom';
 import NavbarItem from '../../common/NavbarItem';
-import './_Header.scss';
 import UserProfile from './UserProfile';
+import './_Header.scss';
 const logo = {
   light:
     'https://demo.uix.store/sober/wp-content/themes/sober/images/logo-light.svg',
@@ -26,7 +27,9 @@ const ListItemIcon = [
   { id: 3, text: 'Favourite', icon: AiOutlineStar },
   { id: 4, text: 'Cart', icon: BiShoppingBag },
 ];
+
 const Header = () => {
+  let history = useHistory();
   const [isActive, setIsActive] = useState(1);
   //show info
   const [visibleUserProfile, setVisibleUserProfile] = useState(false);
@@ -39,6 +42,9 @@ const Header = () => {
   const handleClickIcon = (id) => {
     if (id === 2) {
       showUserProfile();
+    }
+    if (id === 4) {
+      history.push('/cart');
     }
   };
 

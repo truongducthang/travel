@@ -9,9 +9,10 @@ const PackagesDetailsPage = () => {
     <div className="PackagesDetailsPage">
       <HeaderImageLayout
         hideFilter={true}
-        src="https://avi.edu.vn/wp-content/uploads/2019/11/london-2393098.jpg"
-        title_ul="CART"
+        // src="https://avi.edu.vn/wp-content/uploads/2019/11/london-2393098.jpg"
+        title_ul="Package Details"
       />
+      PackagesDetailsPage
     </div>
   );
 };
