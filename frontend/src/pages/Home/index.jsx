@@ -16,7 +16,7 @@ const HomePage = () => {
         <Destinations />
         <Banner />
         <Promotions />
-        <Products />
+        {/* <Products /> */}
       </div>
     </div>
   );
