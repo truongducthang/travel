@@ -6,7 +6,7 @@ import { BsSearch } from 'react-icons/bs';
 import { HiOutlineMenu } from 'react-icons/hi';
 import NavbarItem from '../../common/NavbarItem';
 import './_Header.scss';
-
+import UserProfile from './UserProfile';
 const logo = {
   light:
     'https://demo.uix.store/sober/wp-content/themes/sober/images/logo-light.svg',
@@ -28,7 +28,21 @@ const ListItemIcon = [
 ];
 const Header = () => {
   const [isActive, setIsActive] = useState(1);
+  //show info
+  const [visibleUserProfile, setVisibleUserProfile] = useState(false);
+  const showUserProfile = () => {
+    setVisibleUserProfile(true);
+  };
+  const onCloseUserProfile = () => {
+    setVisibleUserProfile(false);
+  };
+  const handleClickIcon = (id) => {
+    if (id === 2) {
+      showUserProfile();
+    }
+  };
 
+  //end show info
   //detect scroll
   const [scrollDir, setScrollDir] = useState('scrolling down');
   const [scrollingUp, setScrollingUp] = useState(true);
@@ -111,10 +125,21 @@ const Header = () => {
             {ListItemIcon.map((item) => (
               <li key={item.id} className="navbar_icon__item">
                 <Tooltip key={item.id} placement="bottom" title={item.text}>
-                  <item.icon fontSize="2rem" />
+                  <item.icon
+                    onClick={() => handleClickIcon(item.id)}
+                    fontSize="2rem"
+                  />
                 </Tooltip>
               </li>
             ))}
+            <UserProfile
+              onCloseUserProfile={onCloseUserProfile}
+              visibleUserProfile={visibleUserProfile}
+              id="987612345"
+              name="Trà Nguyễn"
+              email="example@gmail.com"
+              phone_number="09xxxxxxxx"
+            />
           </ul>
         </Col>
       </Row>

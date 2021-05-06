@@ -30,55 +30,81 @@ const HeaderImageLayout = (props) => {
   );
   return (
     <div>
-      <div className="HeaderImageLayout">
-        <div className="HeaderImageLayout__content">
-          <div className="HeaderImageLayout__title">
-            {props._namePage ? (
+      <div
+        className="HeaderImageLayout"
+        style={{
+          background: `url(${
+            props.src ||
+            'https://res.cloudinary.com/dulich/image/upload/v1619107721/travel/parallax-search-2_bz6h39.jpg'
+          })  no-repeat center center`,
+        }}
+      >
+        {/* props.hideFilter === true ( ẩn search ). 
+         !props.hideFilter check những màn có chức năng search    */}
+        {!props.hideFilter ? (
+          <div className="HeaderImageLayout__content">
+            <div className="HeaderImageLayout__title">
               <h3 className="HeaderImageLayout__title--sub">
-                {props._namePage}
+                {props._namePage || 'OUR packages'}
               </h3>
-            ) : (
-              <h3 className="HeaderImageLayout__title--sub">OUR packages</h3>
-            )}
-            <TitleSection
-              color="#fff"
-              fontWeight="700"
-              fontSize="3.4rem"
-              colorUnderline="#e27557"
-              hideSuggest={true}
-              title="Search your"
-              title_ul="Holiday"
-            />
+              <TitleSection
+                color="#fff"
+                fontWeight="700"
+                fontSize="3.4rem"
+                colorUnderline="#e27557"
+                hideSuggest={true}
+                title="Search your"
+                title_ul="Holiday"
+              />
+            </div>
+            <div>
+              <div className="FormFilters__top">
+                <FormFilters />
+              </div>
+              <div className="HeaderImageLayout__filters-wrap">
+                <Dropdown overlay={menuPrice}>
+                  <Link
+                    to=""
+                    className="ant-dropdown-link HeaderImageLayout__filters HeaderImageLayout__filtersPrice "
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    Price <DownOutlined />
+                  </Link>
+                </Dropdown>
+                <Dropdown overlay={menuName}>
+                  <Link
+                    to=""
+                    className="ant-dropdown-link  HeaderImageLayout__filters HeaderImageLayout__filtersName"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    Name <DownOutlined />
+                  </Link>
+                </Dropdown>
+              </div>
+            </div>
           </div>
-          <div className="FormFilters__top">
-            <FormFilters />
+        ) : (
+          <div className="HeaderImageLayout__content">
+            <div className="HeaderImageLayout__title">
+              <TitleSection
+                color="#fff"
+                fontWeight="700"
+                fontSize="3.4rem"
+                colorUnderline="#3399FF"
+                hideSuggest={true}
+                title_ul={props.title_ul}
+                title=" "
+              />
+            </div>
           </div>
-          <div className="HeaderImageLayout__filters-wrap">
-            <Dropdown overlay={menuPrice}>
-              <Link
-                to=""
-                className="ant-dropdown-link HeaderImageLayout__filters HeaderImageLayout__filtersPrice "
-                onClick={(e) => e.preventDefault()}
-              >
-                Price <DownOutlined />
-              </Link>
-            </Dropdown>
-            <Dropdown overlay={menuName}>
-              <Link
-                to=""
-                className="ant-dropdown-link  HeaderImageLayout__filters HeaderImageLayout__filtersName"
-                onClick={(e) => e.preventDefault()}
-              >
-                Name <DownOutlined />
-              </Link>
-            </Dropdown>
-          </div>
-        </div>
+        )}
       </div>
       {/* screen >= lg - none  */}
-      <div className="FormFilters__bottom">
-        <FormFilters />
-      </div>
+      {!props.hideFilter && (
+        <div className="FormFilters__bottom">
+          <FormFilters />
+        </div>
+      )}
       {/* end- screen lg   */}
       <style jsx="true">
         {`
