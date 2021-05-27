@@ -227,34 +227,37 @@ a {
 }
 /* end form  */
 /* Custom Tabs antd */
-.ant-tabs-top > .ant-tabs-nav::before,
-.ant-tabs-bottom > .ant-tabs-nav::before,
-.ant-tabs-top > div > .ant-tabs-nav::before,
-.ant-tabs-bottom > div > .ant-tabs-nav::before {
-  border: 0;
+.product {
+  .ant-tabs-top > .ant-tabs-nav::before,
+  .ant-tabs-bottom > .ant-tabs-nav::before,
+  .ant-tabs-top > div > .ant-tabs-nav::before,
+  .ant-tabs-bottom > div > .ant-tabs-nav::before {
+    border: 0;
+  }
+  .ant-tabs-tab:hover {
+    color: #ba55d3;
+  }
+  .ant-tabs.ant-tabs-top {
+    align-items: center;
+  }
+  .ant-tabs-tab {
+    color: #667;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #9900cc;
+    font-weight: 600;
+  }
+  .ant-tabs-ink-bar {
+    position: absolute;
+    background: #9900cc;
+    pointer-events: none;
+  }
+  .ant-tabs-nav-wrap {
+    justify-content: center;
+  }
 }
-.ant-tabs-tab:hover {
-  color: #ba55d3;
-}
-.ant-tabs.ant-tabs-top {
-  align-items: center;
-}
-.ant-tabs-tab {
-  color: #667;
-  font-weight: 600;
-  font-size: 1.6rem;
-  text-transform: capitalize;
-}
-.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-  color: #9900cc;
-  font-weight: 600;
-}
-.ant-tabs-ink-bar {
-  position: absolute;
-  background: #9900cc;
-  pointer-events: none;
-}
-.ant-tabs-nav-wrap {
-  justify-content: center;
-}
+
 /* end tabs antd */
