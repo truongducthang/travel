@@ -79,6 +79,7 @@ const PackagesDetailsPage = () => {
                   <Input />
                 </Form.Item>
                 <Form.Item
+                  style={{ paddingTop: '8px' }}
                   rules={[
                     {
                       required: true,
@@ -100,7 +101,7 @@ const PackagesDetailsPage = () => {
                     onChange={onChangeDate}
                   />
                 </Form.Item>
-                <Form.Item>
+                <Form.Item style={{ paddingTop: '16px' }}>
                   <Select
                     onChange={handleChangeSelect}
                     showSearch
@@ -115,7 +116,7 @@ const PackagesDetailsPage = () => {
                 <div
                   style={{ display: 'flex', justifyContent: 'space-between' }}
                 >
-                  <Form.Item style={{ width: '49%' }}>
+                  <Form.Item style={{ width: '49%', paddingTop: '16px' }}>
                     <Select
                       onChange={handleChangeSelect}
                       showSearch
@@ -129,7 +130,7 @@ const PackagesDetailsPage = () => {
                       ))}
                     </Select>
                   </Form.Item>
-                  <Form.Item style={{ width: '49%' }}>
+                  <Form.Item style={{ width: '49%', paddingTop: '16px' }}>
                     <Select
                       onChange={handleChangeSelect}
                       showSearch
@@ -142,7 +143,12 @@ const PackagesDetailsPage = () => {
                     </Select>
                   </Form.Item>
                 </div>
-                <Button type="primary" htmlType="submit">
+                <Button
+                  style={{ marginTop: '16px' }}
+                  type="primary"
+                  htmlType="submit"
+                  block
+                >
                   Submit
                 </Button>
               </div>
