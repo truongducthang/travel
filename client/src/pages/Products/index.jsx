@@ -34,7 +34,7 @@ const ProductsPage = () => {
               xl={6}
               xxl={6}
             >
-              <ProductItemBox />
+              <ProductItemBox href={`/products/:slug/${index}`} />
             </Col>
           ))}
         </Row>

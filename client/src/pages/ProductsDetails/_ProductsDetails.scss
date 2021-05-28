@@ -56,4 +56,30 @@
 }
 //tabPane
 .tabPane {
+  &__title {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 1.5rem 0;
+  }
+}
+.reviews {
+  .ant-comment-content {
+    position: relative;
+  }
+  &__rate {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+//related
+.related {
+  margin: 0 -12px;
+  &__title {
+    margin: 12px;
+    color: #4b4747;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    font-weight: normal;
+  }
 }

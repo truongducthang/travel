@@ -16,8 +16,8 @@ import CartPage from './pages/Cart';
 
 //list route
 const LIST_ROUTE = [
-  { id: 8, path: '/packages/:slug', component: <PackagesDetailsPage /> },
-  { id: 7, path: '/packages', component: <PackagesPage /> },
+  { id: 8, path: '/homestays/:slug', component: <PackagesDetailsPage /> },
+  { id: 7, path: '/homestays', component: <PackagesPage /> },
   {
     id: 6,
     path: '/destinations/:slug',
@@ -25,7 +25,7 @@ const LIST_ROUTE = [
   },
   { id: 5, path: '/destinations', component: <DestinationsPage /> },
   { id: 4, path: '/products/:slug', component: <ProductsDetailsPage /> },
-  { id: 3, path: '/homestays', component: <ProductsPage /> },
+  { id: 3, path: '/rooms', component: <ProductsPage /> },
   { id: 2, path: '/cart', component: <CartPage /> },
   { id: 1, path: '/', component: <HomePage /> },
 ];

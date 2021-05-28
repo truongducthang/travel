@@ -10,7 +10,7 @@ const PackageBox = (props) => {
   let history = useHistory();
   function handlePushRoute() {
     history.push(
-      `/packages/${props.nameHomestay ? props.nameHomestay : 'nameHomestay'}`
+      `/homestays/${props.nameHomestay ? props.nameHomestay : 'tên-homestay'}`
     );
   }
   return (
@@ -89,7 +89,7 @@ const PackageBox = (props) => {
           </div>
         </div>
         <ButtonUI
-          href={`/packages/${
+          href={`/homestays/${
             props.nameHomestay ? props.nameHomestay : 'nameHomestay'
           }`}
           text="Details"

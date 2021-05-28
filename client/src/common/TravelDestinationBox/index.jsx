@@ -37,7 +37,7 @@ const TravelDestinationBox = (props) => {
             {packages?.map(({ name }, index) => (
               <div key={index} className="travel_destination__content--item">
                 {/* <Link to={`/packages/${id}/${name.toLowerCase()}`}> */}
-                <Link to={`/packages/nameHomestay`}>
+                <Link to={`/homestays/${name}`}>
                   <span>{name}</span>
                 </Link>
               </div>

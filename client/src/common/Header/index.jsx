@@ -14,12 +14,12 @@ const logo = {
   dark: 'https://demo.uix.store/sober/wp-content/themes/sober/images/logo.svg',
 };
 const ListItemNavbar = [
-  { id: 1, text: 'home', route: '/' },
-  { id: 2, text: 'Packages', route: '/packages' },
-  { id: 3, text: 'homestays', route: '/homestays' },
-  { id: 4, text: 'Destinations', route: '/destinations' },
-  { id: 5, text: 'news', route: '/news' },
-  { id: 6, text: 'contact', route: '/contact' },
+  { id: 1, text: 'Trang chủ', route: '/' },
+  { id: 2, text: 'Homestays', route: '/homestays' },
+  { id: 3, text: 'Điểm đến du lịch', route: '/destinations' },
+  { id: 4, text: 'Hot', route: '/rooms' },
+  { id: 5, text: 'Tin tức', route: '/news' },
+  { id: 6, text: 'Liên hệ', route: '/contact' },
 ];
 const ListItemIcon = [
   { id: 1, text: 'Search', icon: BsSearch },

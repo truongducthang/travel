@@ -28,7 +28,7 @@ const BannerItem = (props) => {
         {props.banner.title || 'Discover Cities'}
       </h2>
       <ButtonUI
-        href={props.banner.route || 'packages'}
+        href={props.banner.route || 'homestays'}
         color={props.index === 0 ? '#f3a46b' : '#1bbc9b'}
         paddingButton="1.4rem 2rem"
         borderRadius="5rem"
