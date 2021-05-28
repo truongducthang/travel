@@ -23,8 +23,9 @@ const FormFilters = () => {
     console.log('search:', val);
   }
   function onChangeDate(dates, dateStrings) {
-    console.log('From: ', dates[0], ', to: ', dates[1]);
-    console.log('From: ', dateStrings[0], ', to: ', dateStrings[1]);
+    console.log(dates);
+    // console.log('From: ', dates[0], ', to: ', dates[1]);
+    // console.log('From: ', dateStrings[0], ', to: ', dateStrings[1]);
   }
   function onChangeMinPrice(value) {
     console.log('changed min : ', value);
